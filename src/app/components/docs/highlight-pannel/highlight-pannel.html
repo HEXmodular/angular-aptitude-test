@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="underline pannel">
+        <div class="header">Подчеркивание</div>
+        @for (color of colors; track color) {
+        <div (click)="selectUnderline($index)" class="colors" [style.background]="color"
+            [class.selected]="selectedUnderlineColor === $index"></div>
+        }
+    </div>
+    <div class="highlight pannel">
+        <div class="header">Выделение</div>
+        @for (color of colors; track color) {
+        <div (click)="selectHighlight($index)" class="colors" [style.background]="color"
+            [class.selected]="selectedHighlightColor === $index"></div>
+        }
+    </div>
+</div>

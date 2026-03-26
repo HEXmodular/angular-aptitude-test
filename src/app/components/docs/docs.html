@@ -1,0 +1,20 @@
+<div class="docs">
+    <div class="docs-list">
+        <button (click)="createDoc()" class="new-doc-btn">+ Новый документ</button>
+        <app-docs-list [docs]="docsList" (docSelected)="docSelected($event)"></app-docs-list>
+    </div>
+    <div class="opened-doc">
+        <app-highlight-pannel (underlineColorSelected)="onUnderlineColorSelected($event)" (highlightColorSelected)="onHighlightColorSelected($event)"></app-highlight-pannel>
+        <div class="opened-doc-sheet" contenteditable="true" #contentContainer [innerHTML]="safeHtml">
+        </div>
+        @if (currentSelectionRange) {
+            <div class="highlight-buttons" [style.top.px]="highlightButtonsTop">
+                <button (click)="applyHighlight()">+ 🗨</button>
+                <button (click)="applyUnderline()">+ U</button>  
+            </div>
+        }
+    </div>
+    <div class="comments">
+        <app-comments-list [comments]="commentsList"></app-comments-list>
+    </div>
+</div>

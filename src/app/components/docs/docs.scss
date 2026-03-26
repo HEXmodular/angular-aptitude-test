@@ -1,0 +1,58 @@
+.docs {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    min-height: 90vh;
+}
+
+.docs-list {
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+}
+
+.new-doc-btn {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.opened-doc {
+    margin: 20px;
+    position: relative;
+}
+
+.opened-doc-sheet {
+    background-color: white;
+    padding: 20px;
+    max-width: 800px;
+    min-height: 900px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    outline: rgb(231, 231, 231) solid 1px;
+    margin-top: 20px;
+}
+
+.highlight-buttons {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #949494;
+}
+
+.highlight-buttons button {
+    display: inline-block;
+    height: 30px;
+    vertical-align: top;
+    opacity: 0.5;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.highlight-buttons button:hover {
+    opacity: 1;
+}
+
+.comments {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-left: 1px solid #e0e0e0;
+}

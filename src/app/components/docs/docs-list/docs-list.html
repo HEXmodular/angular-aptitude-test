@@ -1,0 +1,3 @@
+@for (doc of docs(); track doc.id) {
+  <div (click)="docSelected.emit(doc.id)" class="doc-item">{{ doc.title }}</div>
+}

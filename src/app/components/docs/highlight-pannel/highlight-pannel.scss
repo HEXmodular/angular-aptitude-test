@@ -1,0 +1,42 @@
+.container>* {
+    display: inline-block;
+}
+
+.colors {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.pannel {
+    background-color: #efefef;
+    border-radius: 20px;
+    font-size: 8px;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding: 4px 14px;
+    margin-right: 2px;
+}
+
+.selected {
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.color-1 {
+    background-color: #ffeb3b;
+}
+
+.color-2 {
+    background-color: #ff9800;
+}
+
+.color-3 {
+    background-color: #f44336;
+}
+
+.color-4 {
+    background-color: #9c27b0;
+
+}
